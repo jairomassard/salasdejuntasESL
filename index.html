@@ -117,7 +117,7 @@
             </div>
             <div class="col">
 
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXL6H8xYjHwLN7E0oAjMNE7pL_ciKyDwTzUj13VQPtCJSK-3PH9c_vvefzV1BHpPFxg_ZjRNfWd5Ex3sqw0Ys4LpFCR6gaxD5iCQsksNWr5JJnovLVGRUdhG98SvwIGjJLoHTJsaMX98TxcQAL7OZ2xqULnPWPuH24rxB760Rmj48MyIBBkOAWAGqX/w440-h294/Template%20Sala%20de%20Juntas.jpg"
+                <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgZgkN_w9q7ugg-ckSGwdLyxORbEYgKc9w_gMN-uA67c-k5vZDtZ3pRosq2rp2jnEi2y_btvkViFPmocImU5_g4_NsCMDYGEfUinZRRlKAY4xax07opzSRFo_VKcz997qncsOOQJLAE0_w2pNmBvqXbspImswKVN603e3rBNsCVreNZBjA-Zme5g0zn=w427-h297"
                     alt="Foto Etiqueta" title="Templae IQ SPACES" width="700" height="450" />
             </div>
 
@@ -219,7 +219,7 @@
             let transactionFormData = new FormData(form);
             let transactionObj = convertFormDataToTransactionObj(transactionFormData);
             //console.log(transactionObj);
-            //console.log(transactionObj);
+            console.log(transactionObj);
             saveTransactionObj(transactionObj);
             insertRowInTransactionTable(transactionObj);
             EnviarYalaInfo(transactionObj);
@@ -338,7 +338,7 @@
             //convierto mi Array de transacciones a JSON
             let transactionArrayJSON = JSON.stringify(myTransactionArray);
             //Guardo mi array de transacciones en formato JSON en Local storage
-            //localStorage.setItem("transactionData", transactionArrayJSON)
+            localStorage.setItem("transactionData", transactionArrayJSON)
 
         }
 
