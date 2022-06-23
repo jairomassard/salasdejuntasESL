@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAnporm4ZehH71YPczHMYcfgRrmokBibZPPLOQru_hwl6RqS9P4EYB2l680trKJj_Xu_rvLleFlmTm1p6z8WGnEb3_KvyyqbnXP4jLVs8u2bclSsVXeM4PuASW-P40uqeWdDZddpDxEyTSXXSv-BgLJjnVjCGaVfYTpGynWYyAp54STXW9P4PGPitX/s1600/IQSpaces_fabicon_v3.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAnporm4ZehH71YPczHMYcfgRrmokBibZPPLOQru_hwl6RqS9P4EYB2l680trKJj_Xu_rvLleFlmTm1p6z8WGnEb3_KvyyqbnXP4jLVs8u2bclSsVXeM4PuASW-P40uqeWdDZddpDxEyTSXXSv-BgLJjnVjCGaVfYTpGynWYyAp54STXW9P4PGPitX/s1600/IQSpaces_fabicon_v3.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>Reserva de Salas</title>
     <link rel="stylesheet" href="css/estilo.css">
     <!--<script src="js/scripts.js"></script>-->
@@ -15,144 +17,152 @@
 </head>
 
 <body>
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAi9Vh52hPwNrUWCLpU6BMtzX6qkGbyMBXQ2QVoiLNtYLxZ7msK6DfPbP-oMOtQjP9POFNLZaqUS1XyJXUodbPwQ_KADyZfHRD2yhymjIM2I1M4bsOjFAPh4yC5YWTkFzyNLto4P9_oGKWGaxeEXZr6ftDQUGLQob9SYFuo8RYk_5onGE7o8vYSAhO/w633-h245/IQ_Spaces_Def_prueba%20cambio%20colores.png"
-        alt="Logo" title="Foto tomada por Jairo" width="250" height="100" />
+    <div>
+        <label>
+            <h5></h5>
+        </label>
+    </div>
 
-    <h1>Sistema de Cargue de Información - Etiquetas electrónicas</h1>
-    <br />
-    <h2>SALAS DE JUNTAS</h2>
-    <br />
-    <form action="" id="transationform">
-
-        <div>
-            <label for="itemName">Nombre de la Sala</label>
-            <select name="itemName" id="itemName">
-                <option value="Sala1">Sala1</option>
-                <option value="Sala2">Sala2</option>
-                <option value="Sala3">Sala3</option>
-            </select>
-        </div>
-        <div>
-            <label for="itemQrCode">Link QR Sala (opcional)</label>
-            <input type="text" name="itemQrCode" id="itemQrCode" placeholder="pagina web" size="60" maxlength="60" />
-        </div>
-        <div>
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAi9Vh52hPwNrUWCLpU6BMtzX6qkGbyMBXQ2QVoiLNtYLxZ7msK6DfPbP-oMOtQjP9POFNLZaqUS1XyJXUodbPwQ_KADyZfHRD2yhymjIM2I1M4bsOjFAPh4yC5YWTkFzyNLto4P9_oGKWGaxeEXZr6ftDQUGLQob9SYFuo8RYk_5onGE7o8vYSAhO/w633-h245/IQ_Spaces_Def_prueba%20cambio%20colores.png"
+                    alt="Logo" title="Foto tomada por Jairo" width="250" height="100" />
+            </div>
+            <div class="col">
+            </div>
+            <div class="col">
+            </div>
+            <h1>Sistema de Cargue de Información - Etiquetas electrónicas</h1>
             <br />
-            <label>
-                <h3>Reunión Actual</h3>
-            </label>
-        </div>
-        <div>
-            <label for="eatMethod">Fecha de Ocupación</label>
-            <input type="date" name="eatMethod" id="eatMethod" />
-        </div>
-        <div>
-            <label for="itemBaseUnit">Hora Inicio</label>
-            <input type="time" name="itemBaseUnit" id="itemBaseUnit" />
-            <label for="storageCondition">Hora Fin</label>
-            <input type="time" name="storageCondition" id="storageCondition" />
-        </div>
-        <!--<div>
-            <label for="storageCondition">Hora Fin</label>
-            <input type="time" name="storageCondition" id="storageCondition" />
-        </div>-->
-        <div>
-            <label for="mixture">Persona que Reserva</label>
-            <input type="text" name="mixture" id="mixture" placeholder="Nombres y Apellidos" required size="30"
-                maxlength="30" />
-            <span class="validity"></span>
-        </div>
-        <div>
-            <label for="grade">Estado de Ocupación</label>
-            <select name="grade" id="grade">
-                <option value="OCUPADO">OCUPADO</option>
-                <option value="DISPONIBLE">DISPONIBLE</option>
-            </select>
-        </div>
-        <div>
-            <br />
-            <label>
+            <div class="col">
+                <h2>SALAS DE JUNTAS</h2>
                 <br />
-                <label>
-                    <h3>Próxima Reunión</h3>
-                </label>
-            </label>
-        </div>
-        <!--<div>
-            <label for="itemBarCode">Consecutivo en Hospital:</label>
-            <input type="text" name="itemBarCode" id="itemBarCode" placeholder="solo números" required size="9"
-                minlength="9" maxlength="9" />
-            <span class="validity"></span>
-        </div>-->
-        <div>
-            <label for="license">Fecha Próxima Reunión</label>
-            <input type="date" name="license" id="license" />
-        </div>
-        <div>
-            <label for="itemProductionPlace">Hora Inicio</label>
-            <input type="time" name="itemProductionPlace" id="itemProductionPlace" />
-            <label for="company">Hora Fin</label>
-            <input type="time" name="company" id="company" />
-        </div>
+                <form action="" id="transationform">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Nombre de la Sala</span>
+                        <select class="form-select" name="itemName" id="itemName">
+                            <option value="Sala1">Sala1</option>
+                            <option value="Sala2">Sala2</option>
+                            <option value="Sala3">Sala3</option>
+                        </select>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="itemQrCode">Link QR Sala (opcional)</span>
+                        <input type="text" class="form-control" name="itemQrCode" placeholder="Enlace web" size="60"
+                            maxlength="60" />
+                    </div>
+                    <div>
+                        <br />
+                        <label>
+                            <h3>Reunión Actual</h3>
+                        </label>
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="eatMethod">Fecha de Ocupación</span>
+                        <input type="date" class="form-control" name="eatMethod" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="itemBaseUnit">Hora Inicio</span>
+                        <input type="time" class="form-control" name="itemBaseUnit" />
+                        <br>
+                        <span class="input-group-text" id="storageCondition">Hora Fin</span>
+                        <input type="time" class="form-control" name="storageCondition" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="mixture">Persona que Reserva</span>
+                        <input type="text" class="form-control" name="mixture" required size="30" maxlength="30"
+                            placeholder="Nombre y Apellido (opcional)" aria-describedby="mixture" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Estado de Ocupación</span>
+                        <select class="form-select" name="grade" id="grade">
+                            <option value=""></option>
+                            <option value="DISPONIBLE">DISPONIBLE</option>
+                        </select>
+                    </div>
+                    <div>
+                        <br />
 
-        <div>
-            <label for="specifications">Persona que Reserva</label>
-            <input type="text" name="specifications" id="specifications" placeholder="Nombres y Apellidos" required
-                size="30" maxlength="30" />
-            <span class="validity"></span>
-        </div>
+                        <label>
+                            <h3>Próxima Reunión</h3>
+                        </label>
 
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="license">Fecha Próxima Reunión</span>
+                        <input type="date" class="form-control" name="license" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="itemProductionPlace">Hora Inicio</span>
+                        <input type="time" class="form-control" name="itemProductionPlace" />
+                        <br>
+                        <span class="input-group-text" id="company">Hora Fin</span>
+                        <input type="time" class="form-control" name="company" />
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="specifications">Persona que Reserva</span>
+                        <input type="text" class="form-control" name="specifications"
+                            placeholder="Nombre y Apellido (opcional)" required size="30" maxlength="30"
+                            aria-describedby="specifications" />
+                    </div>
+                    <div>
+                        <br />
+                        <button type="button" onclick="cargar()" class="btn btn-danger">Cargue/Edición
+                            Información</button>
 
-        <div>
-            <br />
-            <button type="button" onclick="cargar()">Cargue/Edición en Base de Datos</button>
-            <!--<button>Cargue/Edición en Base de Datos</button>-->
-            <!--<br/>
-        <button onclick="limpiar()">Limpiar Campos</button>-->
-            <br />
+                        <br />
+                    </div>
+                    <br />
+            </div>
+            <div class="col">
+
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXL6H8xYjHwLN7E0oAjMNE7pL_ciKyDwTzUj13VQPtCJSK-3PH9c_vvefzV1BHpPFxg_ZjRNfWd5Ex3sqw0Ys4LpFCR6gaxD5iCQsksNWr5JJnovLVGRUdhG98SvwIGjJLoHTJsaMX98TxcQAL7OZ2xqULnPWPuH24rxB760Rmj48MyIBBkOAWAGqX/w440-h294/Template%20Sala%20de%20Juntas.jpg"
+                    alt="Foto Etiqueta" title="Templae IQ SPACES" width="700" height="450" />
+            </div>
+
         </div>
+        </form>
         <br />
-    </form>
-    <br />
-    <br />
-    <div class="formatotabla">
-        <table id="transactionTable">
-            <tr>
-                <th>
-                    Nombre de Sala
-                </th>
-                <th>
-                    Fecha Reunion Actual
-                </th>
-                <th>
-                    Hora Inicio
-                </th>
-                <th>
-                    Hora Fin
-                </th>
-                <th>
-                    Persona que Reserva
-                </th>
-                <th>
-                    Estado de Ocupación
-                </th>
-                <th>
-                    Fecha Próxima Reunión (PR)
-                </th>
-                <th>
-                    Hora inicio (PR)
-                </th>
-                <th>
-                    Hora fin (PR)
-                </th>
-                <th>
-                    Persona que Reserva (PR)
-                </th>
-                <th>
-                    Fecha envio Info
-                </th>
+        <br />
+        <div class="formatotabla">
+            <table id="transactionTable">
+                <tr>
+                    <th>
+                        Nombre de Sala
+                    </th>
+                    <th>
+                        Fecha Reunion Actual
+                    </th>
+                    <th>
+                        Hora Inicio
+                    </th>
+                    <th>
+                        Hora Fin
+                    </th>
+                    <th>
+                        Persona que Reserva
+                    </th>
+                    <th>
+                        Estado de Ocupación
+                    </th>
+                    <th>
+                        Fecha Próxima Reunión (PR)
+                    </th>
+                    <th>
+                        Hora inicio (PR)
+                    </th>
+                    <th>
+                        Hora fin (PR)
+                    </th>
+                    <th>
+                        Persona que Reserva (PR)
+                    </th>
+                    <th>
+                        Fecha envio Info
+                    </th>
 
-                <!--<tr>
+                    <!--<tr>
                 <td>123456789</td>
                 <td>Jairo Massard</td>
                 <td>72004236</td>
@@ -170,7 +180,9 @@
                 <td>101A</td>
             </tr>-->
 
-        </table>
+            </table>
+
+        </div>
 
     </div>
 
@@ -326,7 +338,7 @@
             //convierto mi Array de transacciones a JSON
             let transactionArrayJSON = JSON.stringify(myTransactionArray);
             //Guardo mi array de transacciones en formato JSON en Local storage
-            //localStorage.setItem("transactionData", transactionArrayJSON)
+            localStorage.setItem("transactionData", transactionArrayJSON)
 
         }
 
@@ -342,7 +354,7 @@
             myHeaders.append("content-type", "application/json");
 
             var raw = JSON.stringify([transactionObj]);
-            //console.log(raw)
+            console.log(raw)
 
             var requestOptions = {
                 method: 'POST',
@@ -384,7 +396,7 @@
 
 
         let hash1 = md5("83C3A53C05553cb" + formatofecha);
-        //console.log(hash1)
+        console.log(hash1)
 
     </script>
 
