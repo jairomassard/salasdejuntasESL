@@ -219,7 +219,7 @@
             let transactionFormData = new FormData(form);
             let transactionObj = convertFormDataToTransactionObj(transactionFormData);
             //console.log(transactionObj);
-            console.log(transactionObj);
+            //console.log(transactionObj);
             saveTransactionObj(transactionObj);
             insertRowInTransactionTable(transactionObj);
             EnviarYalaInfo(transactionObj);
@@ -338,7 +338,7 @@
             //convierto mi Array de transacciones a JSON
             let transactionArrayJSON = JSON.stringify(myTransactionArray);
             //Guardo mi array de transacciones en formato JSON en Local storage
-            localStorage.setItem("transactionData", transactionArrayJSON)
+            //localStorage.setItem("transactionData", transactionArrayJSON)
 
         }
 
@@ -369,30 +369,6 @@
                 .catch(error => console.log('error', error));
 
         };
-
-
-        //function buscar(){
-        //var myHeaders = new Headers();
-        //myHeaders.append("veryText", "a9e787bcbc24f5a71019969090387ff9");
-        //myHeaders.append("merchantCode", "MC1220");
-        //myHeaders.append("content-type", "application/json");
-
-        //var raw = JSON.stringify({
-        //"pageSize": 30
-        //});
-
-        //var requestOptions = {
-        //method: 'POST',
-        //headers: myHeaders,
-        //body: raw,
-        //redirect: 'follow'
-        //};
-
-        //fetch("https://sg.yalabi.net/open/getGoodsList", requestOptions)
-        //.then(response => response.json())
-        //.then(result => console.log(result.data.list))
-        //.catch(error => console.log('error', error));
-        //}
 
 
         let hash1 = md5("83C3A53C05553cb" + formatofecha);
